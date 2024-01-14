@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    background-color: #1F2937;
+    font-family: 'Karla', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+span{
+    color: white;
+}
+h1{
+    color: #10B981;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 0;
+}
+h2{
+    color: #D5D4D8;
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-bottom: 2.5em;
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    color: white;
+    background-color: #10B981;
+    font-size: 1rem;
+    font-weight: normal;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8em 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #038f60;
+}
+
+i{
+    color: #D5D4D8;
+    font-size: 1.8em;
+    margin-left: 0.8em;
+    cursor: pointer;
+}
+i:hover{
+    color: #9c9c9c;
+}
+.line{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+.password-container{
+    display: flex;
+    justify-content: space-between;
+}
+.password {
+    color: #10B981;
+    background-color: #273549;
+    height: 1.3rem;
+    width: 12.5rem;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+    border: 1px solid #273549;
+    text-align: center;
+}
+
+.settings{
+    margin-top: 1.5em;
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+#numbers, #symbols{
+    margin-left: 1em;
+}
+
+#lenght{
+    color: white;
+    background-color: #273549;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5em;
+    width: 50px;
+}
+
+@media (max-width:800px){
+    body{
+        overflow: hidden;
+    }
+    .container{
+        padding: 2em;
+    }
+    .password-container{
+        flex-direction: column;
+        gap: 1em;
+    }
+}
