@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "cursedtimer";
+    src: url(./curdertimer.ttf);
+}
+
+body{
+    margin: 0;
+    background-color: #1B244A;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: left;
+    border-bottom: 1px solid #9AABD8;
+    padding: 1.5em;
+}
+
+.fa-solid{
+    font-size: 1.7rem;
+}
+
+.header-title{
+    margin-left: 0.5em;
+    font-size: 1.7rem;
+}
+
+.header-buttons{
+    margin-left: auto;
+}
+
+header > .header-buttons > button {
+    margin-right: 1em;
+    color: white;
+    background-color: #1B244A;
+    border: 1px solid #9AABD8;
+    padding: 1.3em;
+    cursor: pointer;
+}
+header > .header-buttons > button:hover, button:hover{
+    background-color: #9AABD8;
+    color: white;
+    border-color: white;
+}
+.container{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    height: 80vh;
+}
+
+.home, .guest{
+    width: 250px;
+    border: 1px solid #9AABD8;
+    border-radius: 7%;
+    margin: auto;
+}
+
+h1{
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.score{
+    font-family: "cursedtimer";
+    background-color: black;
+    color: #F94F6D;
+    font-size: 5em;
+    padding-bottom: 0.5em;
+    margin: 0.2em;
+    border: 1px solid #9AABD8;
+    border-radius: 7%;
+    padding: 0.5em;
+}
+
+.score-btn{
+    margin: 2em 0.5em;
+    background-color: #1B244A;
+    color: #9AABD8;
+    padding: 0.8em;
+    border: 1px solid #9AABD8;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.leader{
+    border: 1px solid #F94F6D;
+}
+
+.hidden{
+    display: none;
+}
+
+#gameHistory{
+    padding: 1em;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border: 1px solid #9AABD8;
+    background-color: #1B244A;
+    position: fixed;
+    color: white;
+    overflow: hidden;
+}
+@media (max-width: 800px){
+    .container{
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .header-buttons{
+        display: flex;
+    }
+    #gameHistory{
+        top: 0;
+        border: 1px solid #9AABD8;
+        background-color: #1B244A;
+    }
+    header {
+        padding: 1em;
+    }
+
+}
