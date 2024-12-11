@@ -1,5 +1,5 @@
 # Scrimban harjoitteluprojektit
 
 ## Teknologiat
-- **Backend:** Java, React
-- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Java
+- **Frontend:** HTML, CSS, JavaScript, React
